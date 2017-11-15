@@ -3,12 +3,15 @@ defmodule Pushupbot.Slack do
 
   def handle_connect(slack, state) do
     IO.puts "Connected as #{slack.me.name}"
+    IO.puts "Connected as #{slack.me.id}"
     {:ok, state}
   end
 
   def handle_event(message = %{type: "message"}, slack, state) do
-    if Regex.run ~r/^@#{slack.me.id}/, message.text do
-      send_message("@#{message.user} keep my name out your mouth", message.channel, slack)
+    IO.puts "Got message #{message.text}"
+    IO.puts "Got user #{message.user}"
+    if Regex.run ~r/^<@#{slack.me.id}>/, message.text do
+      send_message("<@#{message.user}> damn right I work", message.channel, slack)
     end
     {:ok, state}
   end

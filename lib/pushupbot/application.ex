@@ -10,7 +10,10 @@ defmodule Pushupbot.Application do
     children = [
       # Starts a worker by calling: Pushupbot.Worker.start_link(arg)
       # {Pushupbot.Worker, arg},
-      #{ Slack.Bot, [Pushupbot.Slack, [], "c4b12a546a966e8f73fcc0d52d3df3d9"] }
+      %{
+        id: Slack.Bot,
+        start: {Slack.Bot, :start_link, [Pushupbot.Slack, [], ""] }
+      }
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

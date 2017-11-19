@@ -6,13 +6,14 @@ defmodule Pushupbot.Application do
   use Application
 
   def start(_type, _args) do
+    slack_token = Application.get_env(:pushupbot, :slack_token)
     # List all child processes to be supervised
     children = [
       # Starts a worker by calling: Pushupbot.Worker.start_link(arg)
       # {Pushupbot.Worker, arg},
       %{
         id: Slack.Bot,
-        start: {Slack.Bot, :start_link, [Pushupbot.Slack, [], ""] }
+        start: {Slack.Bot, :start_link, [Pushupbot.Slack, [], slack_token] }
       }
     ]
 

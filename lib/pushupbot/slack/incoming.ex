@@ -24,5 +24,6 @@ defmodule Pushupbot.Slack do
 
     {:ok, state}
   end
+
   def handle_info(_, _, state), do: {:ok, state}
 end

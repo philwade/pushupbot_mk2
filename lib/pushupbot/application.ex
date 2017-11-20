@@ -14,7 +14,8 @@ defmodule Pushupbot.Application do
       %{
         id: Slack.Bot,
         start: {Slack.Bot, :start_link, [Pushupbot.Slack, [], slack_token] }
-      }
+      },
+      { Pushupbot.Slack.Outgoing, [] }
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

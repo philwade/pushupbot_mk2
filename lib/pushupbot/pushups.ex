@@ -1,4 +1,4 @@
-defmodule Pushbot.Pushups do
+defmodule Pushupbot.Pushups do
   @prompts [
     "I put a 100,000 pictures of my ass on the internet so the NSA could spy on it",
     ":wave: HIT IT WITH THE LEFT :wave:",
@@ -54,5 +54,10 @@ defmodule Pushbot.Pushups do
 
   def get_prompt() do
     Enum.random(@prompts)
+  end
+
+  def emit_prompt() do
+    prompt = get_prompt()
+    GenServer.cast(Slackout, {:message, prompt})
   end
 end

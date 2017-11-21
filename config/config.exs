@@ -12,6 +12,8 @@ use Mix.Config
 #
 #     config :pushupbot, key: :value
 config :pushupbot, slack_token: System.get_env("SLACK_TOKEN")
+
+config :slack, api_token: System.get_env("SLACK_TOKEN")
 #
 # and access this configuration in your application as:
 #

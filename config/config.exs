@@ -14,6 +14,12 @@ use Mix.Config
 config :pushupbot, slack_token: System.get_env("SLACK_TOKEN")
 
 config :slack, api_token: System.get_env("SLACK_TOKEN")
+
+config :pushupbot, Pushupbot.Scheduler,
+  timezone: "America/New_York",
+  jobs: [
+     {"0 9,10,11,12,13,14,15,16 * * 1,2,3,4,5",  fn -> Pushupbot.Pushups.emit_prompt() end},
+  ]
 #
 # and access this configuration in your application as:
 #

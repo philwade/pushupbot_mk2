@@ -22,7 +22,9 @@ defmodule Pushupbot.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-	  {:slack, "~> 0.12.0"}
+      {:slack, "~> 0.12.0"},
+      {:quantum, ">= 2.2.0"},
+      {:timex, "~> 3.0"}
     ]
   end
 end

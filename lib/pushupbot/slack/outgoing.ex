@@ -8,7 +8,7 @@ defmodule Pushupbot.Slack.Outgoing do
   # Server
   def handle_cast({:message, value}, state) do
     IO.puts "got message #{value}"
-    Slack.Web.Chat.post_message("#shame-week", value)
+    Slack.Web.Chat.post_message("#pushupboys", value)
     {:noreply, state}
   end
 

@@ -8,4 +8,10 @@
 
 # Building
 
+You need to define a slack token environment varible:
+
+    SLACK_TOKEN=big-bad-token-guy
+
+Then run this and find your stuff in `_build`:
+
     $ ./docker/build.sh

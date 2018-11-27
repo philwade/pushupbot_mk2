@@ -23,8 +23,9 @@ defmodule Pushupbot.Mixfile do
   defp deps do
     [
       {:slack, "~> 0.12.0"},
-      {:quantum, ">= 2.2.0"},
-      {:timex, "~> 3.0"}
+      {:quantum, ">= 2.3.0"},
+      {:timex, "~> 3.0"},
+      {:distillery, "~> 2.0"}
     ]
   end
 end

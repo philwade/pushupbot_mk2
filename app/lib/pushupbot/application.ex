@@ -11,10 +11,10 @@ defmodule Pushupbot.Application do
     children = [
       # Starts a worker by calling: Pushupbot.Worker.start_link(arg)
       # {Pushupbot.Worker, arg},
-      #%{
-      #  id: Slack.Bot,
-      #  start: {Slack.Bot, :start_link, [Pushupbot.Slack, [], slack_token] }
-      #},
+      %{
+        id: Slack.Bot,
+        start: {Slack.Bot, :start_link, [Pushupbot.Slack, [], slack_token] }
+      },
       { Pushupbot.Slack.Outgoing, [] },
       { Pushupbot.Scheduler, [] }
     ]

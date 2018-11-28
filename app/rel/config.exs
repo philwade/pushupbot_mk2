@@ -47,7 +47,8 @@ end
 release :pushupbot do
   set version: current_version(:pushupbot)
   set applications: [
-    :runtime_tools
+    :runtime_tools,
+    :poison
   ]
 end
 

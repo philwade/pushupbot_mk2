@@ -11,7 +11,8 @@ defmodule Pushupbot.Slack do
     IO.puts "Got message #{message.text}"
     IO.puts "Got user #{message.user}"
     if Regex.run ~r/^<@#{slack.me.id}>/, message.text do
-      send_message("<@#{message.user}> damn right I work", message.channel, slack)
+      response = Pushupbot.Personality.respond(message.text)
+      send_message("<@#{message.user}> #{response}", message.channel, slack)
     end
     {:ok, state}
   end

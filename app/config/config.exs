@@ -2,6 +2,12 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+config :pushupbot, Pushupbot.Repo,
+  database: "pushupbot_repo",
+  username: "pwade",
+  password: "pass",
+  hostname: "localhost"
+
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,
@@ -12,6 +18,8 @@ use Mix.Config
 #
 #     config :pushupbot, key: :value
 config :pushupbot, slack_token: System.get_env("SLACK_TOKEN")
+
+config :pushupbot, ecto_repos: [Pushupbot.Repo]
 
 config :slack, api_token: System.get_env("SLACK_TOKEN")
 

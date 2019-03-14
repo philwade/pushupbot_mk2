@@ -14,7 +14,7 @@ defmodule Pushupbot.Slack do
     if Regex.run ~r/^<@#{slack.me.id}>/, message.text do
 
       if Regex.run ~r/^<@#{slack.me.id}> do pushups here/, message.text do
-        subscription = %Pushupbot.Subscription{ channel_id: message.channel, team_id: slack.team.id}
+        subscription = %Pushupbot.Subscription{ channel_id: message.channel, team_id: slack.team.id, human_readable_name: "#{slack.team.name} : #{slack.channels[message.channel].name}"}
         changeset = Pushupbot.Subscription.changeset(subscription)
 
         case Pushupbot.Repo.insert(changeset) do
@@ -30,6 +30,7 @@ defmodule Pushupbot.Slack do
     end
     {:ok, state}
   end
+
   def handle_event(_, _, state), do: {:ok, state}
 
   def handle_info({:message, text, channel}, slack, state) do

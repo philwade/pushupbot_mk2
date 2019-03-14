@@ -12,14 +12,14 @@ defmodule Pushupbot.Pushups do
     "Yo momma so good at pushups they renamed them yomommaups",
     ":sparrow: Meek Mill said on twitter that Nas ghostwrote your pushups :sparrow:",
     ":pig: :pig: GO HAM :pig: :pig:",
-    ":tng: :tng: Push or push not, there is no try :tng: :tng:",
+    ":space_invader: :space_invader: Push or push not, there is no try :space_invader: :space_invader:",
     ":muscle: :muscle: P U S H U P B O Y S A N D G I R L S :muscle: :muscle:",
     "time for pushups",
     ":bomb: Dr. Balanced recommends a minimum of seven pushups an hour :bomb:",
     "last name boys / first name pushups / like a dictionary I got all the lookups",
-    ":2chainz: I had a dreeeeeam / pushups didn't work / woke up on the rug / had to hit it with the planks :2chainz:",
+    ":chains: :chains: I had a dreeeeeam / pushups didn't work / woke up on the rug / had to hit it with the planks :chains: :chains:",
     ":ramen: Mr. Noodlearms please report to the pushup area :ramen:",
-    ":thugger: Put my biceps in your cup / they might not melt / oh my push brah :thugger:",
+    ":face_vomiting: :nauseated_face: Put my biceps in your cup / they might not melt / oh my push brah :face_vomiting: :nauseated_face:",
     "GET P NINETY EXED",
     ":computer: ...he'll try to persuade me to squash it / I'll say nah, he forgot what a hardcore programmer is / a hardcore programmer is a dangerous man / such as myself / trained to do twenty pushups in soft carpet :computer:",
     ":fire: :boom: COP THE ALBUM #PUSHUPBOYS OUT TOMORROW 100% FIRE 200% PLANKS :boom: :fire:",
@@ -33,8 +33,9 @@ defmodule Pushupbot.Pushups do
     "I'm pretty much just a Pusha T quote bot now",
     "Yung Tookie is always late",
     ":star: Check out my Spark video it's just Tookie being late for pushup time :star:",
-    ":2chainz: Bought a new crib just to pushup in / I've been doing planks where the rep you been? :2chainz:",
+    ":chains: :chains: Bought a new crib just to pushup in / I've been doing planks where the rep you been? :chains: :chains:",
     "Some people call me the space cowboy / some people call me the gangster of hugs",
+    "Some people call me the space cowboy / some people call me the gangster of carbs",
     ":triangular_ruler: it's the roc :triangular_ruler: ",
     ":chart_with_downwards_trend: super-push-ups / planka-genesis / when I was dead weak / I couldn't picture this :chart_with_upwards_trend:",
     ":spaghetti: :spaghetti: :spaghetti: mom's :spaghetti: :spaghetti: :spaghetti:",
@@ -58,6 +59,6 @@ defmodule Pushupbot.Pushups do
 
   def emit_prompt() do
     prompt = get_prompt()
-    GenServer.cast(Slackout, {:message, prompt})
+    GenServer.cast(Slackout, {:message, %{text: prompt, channel: "#pushupboys"}})
   end
 end

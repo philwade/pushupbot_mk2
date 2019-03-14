@@ -4,6 +4,7 @@ defmodule Pushupbot.Subscription do
   schema "subscriptions" do
     field :team_id, :string
     field :channel_id, :string
+    field :human_readable_name, :string
   end
 
   def changeset(subscription, params \\ %{}) do

@@ -10,7 +10,7 @@ defmodule Pushupbot.Pushups do
     ":grimacing: WHY DID NO ONE TELL ME IT WAS RICH'S BIRTHDAY :grimacing:",
     "Suns out buns out :hamburger:",
     "Yo momma so good at pushups they renamed them yomommaups",
-    ":sparrow: Meek Mill said on twitter that Nas ghostwrote your pushups :sparrow:",
+    ":bird: Meek Mill said on twitter that Nas ghostwrote your pushups :bird:",
     ":pig: :pig: GO HAM :pig: :pig:",
     ":space_invader: :space_invader: Push or push not, there is no try :space_invader: :space_invader:",
     ":muscle: :muscle: P U S H U P B O Y S A N D G I R L S :muscle: :muscle:",

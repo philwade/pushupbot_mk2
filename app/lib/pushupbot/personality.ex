@@ -12,6 +12,8 @@ defmodule Pushupbot.Personality do
     "you seem like a nice person",
     "let's hug it out, pal",
     "in addition to pushups, yoga can have many positive effects on your life",
+    "you are deserving of love, pal",
+    "I'd have to agree",
   ]
 
   @negative [
@@ -22,6 +24,8 @@ defmodule Pushupbot.Personality do
     "despite the name, I don't take getting pushed around lying down",
     "here's a thought: pokemon-go jump off a dang bridge",
     "here's an idea: I'm going to take you to castlevapia and then smoke you. Like a vape stick",
+    "if you come for the bot, you best not miss",
+    "I'm going to push you down, into hell",
   ]
 
   @neutral [
@@ -32,6 +36,7 @@ defmodule Pushupbot.Personality do
     "the color gray is considered neutral but so it dark green I believe",
     "hmm, hard to say",
     "oh wow, damn",
+    "sure",
   ]
 
   defp get_neutral_response() do
@@ -55,4 +60,6 @@ defmodule Pushupbot.Personality do
       true -> get_neutral_response()
     end
   end
+
 end
+

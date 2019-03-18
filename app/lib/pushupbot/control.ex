@@ -60,10 +60,14 @@ defmodule Pushupbot.Control do
   defp parsemessage(my_id, message) do
     if Regex.run ~r/^<@#{my_id}>/, message.text do
       cond do
+        message.user == my_id ->
+          {:noop}
         Regex.run ~r/^<@#{my_id}> do pushups here/, message.text ->
           {:add_subscription}
         Regex.run ~r/^<@#{my_id}> stop doing pushups/, message.text ->
           {:remove_subscription}
+        Regex.run ~r/^<@#{my_id}> has joined the channel/, message.text ->
+          {:noop}
         true ->
           {:talk_back}
       end

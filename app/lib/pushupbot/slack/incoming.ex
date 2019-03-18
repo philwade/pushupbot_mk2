@@ -7,6 +7,13 @@ defmodule Pushupbot.Slack do
     {:ok, state}
   end
 
+  def handle_event(message = %{type: "channel_joined"}, slack, state) do
+    IO.puts "Joined channel #{message.channel.name}"
+    response = "Hi, I'm pushupbot. If you'd like pushup reminders here on the hour, say '@pushupbot do pushups here'. If you want me to stop, say '@pushupbot stop doing pushups'."
+    send_message(response, message.channel.id, slack)
+    {:ok, state}
+  end
+
   def handle_event(message = %{type: "message"}, slack, state) do
     IO.puts "Got message #{message.text}"
     IO.puts "Got user #{message.user}"

@@ -25,3 +25,5 @@ erl_crash.dump
 *.swp
 
 .env
+
+prod.secret.exs

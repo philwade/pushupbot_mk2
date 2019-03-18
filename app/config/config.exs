@@ -28,7 +28,7 @@ config :pushupbot, Pushupbot.Scheduler,
   jobs: [
     emit_prompts: [
       schedule: {:cron, "0 9,10,11,12,13,14,15,16 * * 1,2,3,4,5"},
-      task: {Pushupbot.Pushups, :emit_prompt, []},
+      task: {Pushupbot.Control, :send_outgoing_messages, []},
     ]
   ]
 #

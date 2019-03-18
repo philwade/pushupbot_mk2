@@ -15,7 +15,15 @@ defmodule Pushupbot.Control do
     end
   end
 
+  defp do_send (subscription) do
+    message = Pushupbot.Pushups.get_prompt()
+    GenServer.cast(Slackout, {:message, %{text: message, channel: subscription.channel_id}})
+  end
+
   def send_outgoing_messages() do
+    Pushupbot.Subscription
+    |> Pushupbot.Repo.all
+    |> Enum.each(fn sub -> do_send(sub) end)
   end
 
   defp add_sub(message, slack) do

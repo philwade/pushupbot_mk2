@@ -57,8 +57,4 @@ defmodule Pushupbot.Pushups do
     Enum.random(@prompts)
   end
 
-  def emit_prompt() do
-    prompt = get_prompt()
-    GenServer.cast(Slackout, {:message, %{text: prompt, channel: "#pushupboys"}})
-  end
 end

@@ -50,5 +50,8 @@ release :pushupbot do
     :runtime_tools,
     :poison
   ]
+  set commands: [
+    migrate: "rel/commands/migrate.sh"
+  ]
 end
 

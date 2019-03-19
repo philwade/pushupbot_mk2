@@ -25,6 +25,7 @@ config :pushupbot, Pushupbot.Scheduler,
       task: {Pushupbot.Control, :send_outgoing_messages, []},
     ]
   ]
+
 #
 # and access this configuration in your application as:
 #

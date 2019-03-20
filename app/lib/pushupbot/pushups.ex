@@ -51,6 +51,7 @@ defmodule Pushupbot.Pushups do
     ":chocolate_bar: :candy: M&M's are the Budweiser of candy :candy: :chocolate_bar:",
     ":chocolate_bar: :candy: M&M's and Budweiser are products of the oppressive capitalist system :candy: :chocolate_bar:",
     ":japanese_ogre: pushup god demands a sacrifice :japanese_ogre:",
+    ":minidisc: gligs baby!! :minidisc:",
   ]
 
   def get_prompt() do

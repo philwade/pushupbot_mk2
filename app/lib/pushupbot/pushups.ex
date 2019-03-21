@@ -6,7 +6,6 @@ defmodule Pushupbot.Pushups do
     ":muscle: :muscle: P U S H U P B O Y S :muscle: :muscle:",
     ":ghost: I'm just here for the boos :ghost:",
     ":spaghetti: I am Gino Musclerino, you are doing my clients pushups please no pasterino :spaghetti:",
-    ":dansgame: :dansgame: :dansgame: :dansgame: :dansgame: :dansgame: :dansgame: :dansgame: :dansgame: :dansgame: :dansgame:",
     ":grimacing: WHY DID NO ONE TELL ME IT WAS RICH'S BIRTHDAY :grimacing:",
     "Suns out buns out :hamburger:",
     "Yo momma so good at pushups they renamed them yomommaups",
@@ -52,6 +51,7 @@ defmodule Pushupbot.Pushups do
     ":chocolate_bar: :candy: M&M's and Budweiser are products of the oppressive capitalist system :candy: :chocolate_bar:",
     ":japanese_ogre: pushup god demands a sacrifice :japanese_ogre:",
     ":minidisc: gligs baby!! :minidisc:",
+    ":volcano: :volcano: Give me the beat boy and free my soul I want to do pushups and fall in a volcano :volcano: :volcano:"
   ]
 
   def get_prompt() do

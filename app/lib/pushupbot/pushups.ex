@@ -51,7 +51,10 @@ defmodule Pushupbot.Pushups do
     ":chocolate_bar: :candy: M&M's and Budweiser are products of the oppressive capitalist system :candy: :chocolate_bar:",
     ":japanese_ogre: pushup god demands a sacrifice :japanese_ogre:",
     ":minidisc: gligs baby!! :minidisc:",
-    ":volcano: :volcano: Give me the beat boy and free my soul I want to do pushups and fall in a volcano :volcano: :volcano:"
+    ":volcano: :volcano: Give me the beat boy and free my soul I want to do pushups and fall in a volcano :volcano: :volcano:",
+    ":knife_fork_plate: :knife_fork_plate: I'm starting the dishwasher :knife_fork_plate: :knife_fork_plate:",
+    ":man-lifting-weights: :man-wrestling: Hell yeah Karate Rick :man-wrestling: :man-lifting-weights:",
+    ":computer: :desktop_computer: Databases are trash :desktop_computer: :computer:",
   ]
 
   def get_prompt() do

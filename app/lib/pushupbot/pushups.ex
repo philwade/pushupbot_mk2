@@ -55,6 +55,7 @@ defmodule Pushupbot.Pushups do
     ":knife_fork_plate: :knife_fork_plate: I'm starting the dishwasher :knife_fork_plate: :knife_fork_plate:",
     ":man-lifting-weights: :man-wrestling: Hell yeah Karate Rick :man-wrestling: :man-lifting-weights:",
     ":computer: :desktop_computer: Databases are trash :desktop_computer: :computer:",
+    ":knife_fork_plate: :knife_fork_plate: WHO TOOK MY DAMN PLATE :knife_fork_plate: :knife_fork_plate:",
   ]
 
   def get_prompt() do

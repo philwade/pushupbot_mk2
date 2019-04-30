@@ -56,6 +56,7 @@ defmodule Pushupbot.Pushups do
     ":man-lifting-weights: :man-wrestling: Hell yeah Karate Rick :man-wrestling: :man-lifting-weights:",
     ":computer: :desktop_computer: Databases are trash :desktop_computer: :computer:",
     ":knife_fork_plate: :knife_fork_plate: WHO TOOK MY DAMN PLATE :knife_fork_plate: :knife_fork_plate:",
+    ":wolf: :wolf: meet me at the great push lodge :wolf: :wolf:",
   ]
 
   def get_prompt() do

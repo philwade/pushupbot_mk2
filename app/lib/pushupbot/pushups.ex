@@ -58,7 +58,7 @@ defmodule Pushupbot.Pushups do
     ":knife_fork_plate: :knife_fork_plate: WHO TOOK MY DAMN PLATE :knife_fork_plate: :knife_fork_plate:",
     ":wolf: :wolf: meet me at the great push lodge :wolf: :wolf:",
     ":clock4: :chains: :clock4: 4AM JUST GETTING STARTED (doing pushups) :clock4: :chains: :clock4:",
-    ":clock4: :ferris_wheel: :clock4: pushed up on my by surprise / I never took you for the pushing type :clock4: :ferris_wheel: :clock4:",
+    ":clock4: :ferris_wheel: :clock4: pushed up on me by surprise / I never took you for the pushing type :clock4: :ferris_wheel: :clock4:",
   ]
 
   def get_prompt() do
